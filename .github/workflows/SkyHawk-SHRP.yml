@@ -45,7 +45,7 @@ on:
 jobs:
   build:
     name: Build SHRP by ${{ github.actor }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.02
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
